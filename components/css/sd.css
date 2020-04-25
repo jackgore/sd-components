@@ -1,0 +1,150 @@
+/* SDText */
+.sd-text {
+  font-family: sans-serif;
+}
+
+.sd-text-primary {
+  color: black;
+}
+
+.sd-text-secondary {
+  color: #5a5a5a;
+}
+
+/* SDNav CSS */
+
+.sd-nav-bar-right-item {
+  margin-left: auto !important;
+}
+
+.sd-nav-bar-item {
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+  margin: 0 8px;
+}
+
+.sd-nav-bar {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  height: 48px;
+  line-height: 32px;
+  padding: 4px 16px;
+  width: 100%;
+}
+
+.sd-nav-bar-black {
+  background-color: #24292e;
+  color: white;
+}
+
+.sd-nav-bar-blue {
+  background-color: #016fb9;
+  color: white;
+}
+
+/* SDForm CSS */
+.sd-form {
+  margin: auto;
+  width: 100%;
+}
+
+.sd-form-item {
+  padding: 8px 0;
+}
+
+.sd-form-text-input {
+  box-sizing: border-box;
+  height: 32px;
+  padding: 8px;
+  width: 100%;
+}
+
+/* SDButton CSS */
+.sd-button {
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.sd-special-button {
+  font-weight: bold;
+  background-color: #01ff70;
+}
+
+/* SDLink CSS */
+.sd-link {
+  text-decoration: none;
+}
+
+.sd-link:hover {
+  text-decoration: underline;
+}
+
+/* SDCard */
+.sd-card {
+  background-color: #f3f3f3;
+  border-radius: 4px;
+  box-sizing: border-box;
+  /* TODO: Not sure if this is the correct way to handle this.*/
+  height: 100%;
+  padding: 16px;
+}
+
+/* SDListItem */
+.sd-list-item {
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 8px 0;
+}
+
+.sd-list-item-padding {
+  padding: 8px;
+}
+
+.sd-list-item:hover,
+.sd-selected-list-item {
+  background-color: #d4d4d4;
+}
+
+/* SDFlex */
+.sd-flex {
+  display: flex;
+}
+
+/* SDDivider */
+.sd-divider {
+  border: 1px solid #a9a9a9;
+  box-sizing: border-box;
+  height: 0;
+  margin: 8px 2px;
+  width: 100%;
+}
+
+/* SDNavDropDownItem */
+.sd-nav-drop-down-item {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+}
+
+.sd-nav-drop-down-display {
+  display: flex;
+}
+
+.sd-nav-drop-down-icon {
+  align-self: center;
+  margin: 0 0 2px 0;
+}
+
+.sd-nav-drop-down-content {
+  background-color: #25292d;
+  border-radius: 4px;
+  box-sizing: initial;
+  min-width: 200px;
+  top: 41px;
+  padding: 8px 16px;
+  position: absolute;
+  z-index: 1;
+}
