@@ -2,8 +2,6 @@
 
 import React, { type Node } from "react";
 
-import "./css/sd.css";
-
 type Props = {|
   children: Node,
   style?: $Keys<typeof STYLE_CLASSES>,

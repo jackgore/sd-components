@@ -2,8 +2,6 @@
 
 import React from "react";
 
-import "./css/sd.css";
-
 type Props = {|
   children: string,
   href: string,

@@ -5,8 +5,6 @@ import { useRouter } from "next/router";
 import React, { type Node } from "react";
 import SDText from "./SDText";
 
-import "./css/sd.css";
-
 type Props = {|
   // Controls whether the nav item should be aligned left or right in nav.
   align?: "left" | "right",

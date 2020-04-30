@@ -5,8 +5,6 @@ import typeof SDButton from "./SDButton";
 
 import React, { type Node, type Element } from "react";
 
-import "./css/sd.css";
-
 type Props = {|
   children: Array<Element<SDFormTextItem> | Element<SDButton>>,
   onSubmit: () => void,

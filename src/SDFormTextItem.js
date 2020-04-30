@@ -3,8 +3,6 @@
 import React, { type Node } from "react";
 import SDText from "./SDText";
 
-import "./css/sd.css";
-
 type Props = {|
   label: string,
   name: string,

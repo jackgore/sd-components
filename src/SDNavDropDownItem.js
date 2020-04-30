@@ -9,12 +9,10 @@ import SDList from "./SDList";
 import SDListItem from "./SDListItem";
 import SDNavItem from "./SDNavItem";
 
-import "./css/sd.css";
-
 type Props = {|
   values: Array<string>,
   value: string,
-  onSelect: string => void,
+  onSelect: (string) => void,
 |};
 
 function SDNavDropDownItem(props: Props): Node {
@@ -29,7 +27,7 @@ function SDNavDropDownItem(props: Props): Node {
   const dropdownContent = (
     <div className="sd-nav-drop-down-content" style={contentStyle}>
       <SDList>
-        {values.map(v => (
+        {values.map((v) => (
           <SDListItem
             key={v}
             padding={"0 8px"}
