@@ -1,5 +1,4 @@
 import React from "react";
-import ISDText from "./SDText";
 import ISDButton from "./SDButton";
 import ISDCard from "./SDCard";
 import ISDDivider from "./SDDivider";
@@ -16,7 +15,6 @@ import ISDText from "./SDText";
 
 const SDComponents = {};
 
-export const SDText = ISDText;
 export const SDButton = ISDButton;
 export const SDCard = ISDCard;
 export const SDDivider = ISDDivider;
