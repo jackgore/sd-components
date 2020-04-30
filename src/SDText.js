@@ -4,8 +4,6 @@ import typeof SDLink from "./SDLink";
 
 import React, { type Element, type Node, type ChildrenArray } from "react";
 
-import "./css/sd.css";
-
 type FontSize = $Keys<typeof FONT_SIZES>;
 type TextStyle = $Keys<typeof TEXT_STYLES>;
 
