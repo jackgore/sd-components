@@ -9,6 +9,7 @@ type TextStyle = $Keys<typeof TEXT_STYLES>;
 
 type Props = {|
   children: ChildrenArray<Element<SDLink> | string>,
+  display?: "inline" | "block" | "flex" | "inline-block",
   fontStyle?: "italic" | "normal" | "oblique" | "initial" | "inherit",
   margin?: string,
   size?: FontSize,
@@ -37,6 +38,7 @@ const TEXT_STYLES = {
 function SDText(props: Props): Node {
   const {
     children,
+    display,
     fontStyle,
     margin,
     size,
@@ -56,6 +58,7 @@ function SDText(props: Props): Node {
   return (
     <div
       className={`sd-text ${TEXT_STYLES[textStyle]}`}
+      display={display}
       fontStyle={fontStyle}
       style={style}
     >
