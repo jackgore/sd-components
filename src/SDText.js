@@ -49,6 +49,7 @@ function SDText(props: Props): Node {
 
   // Styles for describing how the text is presented.
   const style = {
+    display,
     fontSize: FONT_SIZES[size ?? "header1"],
     fontWeight: weight,
     margin,
@@ -58,7 +59,6 @@ function SDText(props: Props): Node {
   return (
     <div
       className={`sd-text ${TEXT_STYLES[textStyle]}`}
-      display={display}
       fontStyle={fontStyle}
       style={style}
     >

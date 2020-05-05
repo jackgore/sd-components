@@ -1,6 +1,6 @@
 {
   "name": "sd-components-sd",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "Standard Components",
   "main": "dist/index.js",
   "scripts": {
