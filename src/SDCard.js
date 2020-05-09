@@ -4,14 +4,16 @@ import React, { type Node } from "react";
 
 type Props = {|
   children: Node,
+  overflow?: "scroll",
   width?: string,
 |};
 
 function SDCard(props: Props): Node {
-  const { children, width } = props;
+  const { children, overflow, width } = props;
 
   // Allow dynamic sizing of the card
   const style = {
+    overflow,
     width,
   };
 
