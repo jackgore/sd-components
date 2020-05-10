@@ -6,12 +6,20 @@ type Props = {|
   children: Node,
   onDeselect?: () => void,
   onSelect?: () => void,
+  margin?: string,
   padding?: string,
   selected?: boolean,
 |};
 
 function SDListItem(props: Props): Node {
-  const { children, padding = "8px", onDeselect, onSelect, selected } = props;
+  const {
+    children,
+    padding = "8px",
+    margin,
+    onDeselect,
+    onSelect,
+    selected,
+  } = props;
 
   const classNames = ["sd-list-item"];
   if (selected) {
@@ -20,6 +28,7 @@ function SDListItem(props: Props): Node {
 
   const style = {
     padding,
+    margin,
   };
 
   return (
